@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.right_box_shadow {
+  box-shadow: none 15px 0 15px -15px white;
+}
+.left_box_shadow {
+  box-shadow: -15px 0 25px -15px white;
+}
+
+@layer components {
+  .scrollbar::-webkit-scrollbar {
+    @apply h-[7px] w-[7px];
+  }
+  .scrollbar::-webkit-scrollbar-corner {
+    @apply bg-transparent;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-whatsapp-misc-scrollbar_light dark:bg-whatsapp-misc-scrollbar_dark;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+  }
+}
+
+a {
+  @apply text-whatsapp-misc-link;
+}
+a:visited {
+  @apply text-whatsapp-misc-link;
+}
+a:hover {
+  @apply text-whatsapp-misc-link;
+}
+
+@layer base {
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+.box_shadow_inset {
+  @apply shadow-[inset_0px_0px_34px_22px_#00000024];
+}

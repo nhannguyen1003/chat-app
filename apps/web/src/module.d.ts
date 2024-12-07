@@ -1,0 +1,14 @@
+declare namespace NodeJS {
+  export interface ProcessEnv {
+    NEXT_PUBLIC_BACKEND_URL: string;
+    NEXT_PUBLIC_STATIC_ASSETS_SERVER_URL: string;
+    NEXT_PUBLIC_ACCESS_TOKEN_SECRET: string;
+    NEXT_PUBLIC_REFRESH_TOKEN_SECRET: string;
+    NEXT_PUBLIC_ACCESS_TOKEN_NAME: string;
+    NEXT_PUBLIC_REFRESH_TOKEN_NAME: string;
+    NEXT_PUBLIC_OTP_TOKEN_SECRET: string;
+    NEXT_PUBLIC_OTP_TOKEN_NAME: string;
+    NEXT_PUBLIC_SOCKET_URL: string;
+    NEXT_PUBLIC_VAPID_PUBLIC_ID: string;
+  }
+}

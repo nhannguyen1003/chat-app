@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "module": "commonjs",
+    "types": ["node"],
+    "emitDecoratorMetadata": true,
+    "target": "es2021",
+    "noImplicitAny": false,
+    "baseUrl": "./",
+    "paths": {
+      "@server/*": ["../../apps/server/src/*"],
+      "@shared/types":["../../shared/types/index.ts"]
+
+    }
+  },
+  "exclude": ["jest.config.ts", "src/**/*.spec.ts", "src/**/*.test.ts"],
+  "include": ["src/**/*.ts"]
+}
